@@ -42,6 +42,8 @@ export default function CallToActionWithAnnotation() {
         setAmount(newAmount)
         setMessage(newMessage)
       }).catch((err) => console.log(err))
+    } else {
+      alert('Please Increase the amount')
     }
   }
   return (
