@@ -39,11 +39,8 @@ export default function CallToActionWithAnnotation() {
         email: email,
         amount: newAmount
       })).then(() => {
-
-        if (1 < 2) {
-          console.log(Widget)
-        }
-
+        setAmount(newAmount)
+        setMessage(newMessage)
       }).catch((err) => console.log(err))
     }
   }
@@ -78,6 +75,10 @@ export default function CallToActionWithAnnotation() {
             <button id="pay" type="submit"><img width='160' src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png" /></button>
           </form>
           <div id="bitcoinpay"></div>
+
+          {/* <a href="" className="blockoPayBtn" data-toggle="modal" data-uid='5050f416cadc45b4'> */}
+          {/* <Image width='160' src="https://www.blockonomics.co/img/pay_with_bitcoin_medium.png" /></a> */}
+
         </Stack>
       </Container>
     </>
